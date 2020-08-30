@@ -29,16 +29,23 @@ Total_Stock_Volume = ws.Cells(i, 7).Value
 
 
 If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
+
 ws.Cells(i, 1).Value = Tickler
+
 ws.Range("J" & Summary_Table_Row).Value = Tickler
+
 ws.Range("K" & Summary_Table_Row).Value = Year_change
+
 ws.Range("L" & Summary_Table_Row).Value = Percent_Change
+
 ws.Range("M" & Summary_Table_Row).Value = Total_Stock_Volume
 
 Summary_Table_Row = Summary_Table_Row + 1
 
 Year_change = 0
+
 Percent_Change = 0
+
 Total_Stock_Volume = 0
 
 Else
