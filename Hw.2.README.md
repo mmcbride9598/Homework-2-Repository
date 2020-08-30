@@ -3,12 +3,19 @@ Repository for Hw#2
 Sub HW_2()
 
 Dim Tickler As String
+
 Dim Summary_Table_Row As Integer
+
 Dim Last_Row As Integer
+
 Dim Year_change As Double
+
 Dim Percent_Change As Double
+
 Dim Total_Stock_Volume As Long
+
 Dim Open_Date As Double
+
 Dim Close_Date As Double
 
 
@@ -21,10 +28,15 @@ For Each ws In Worksheets
 For i = 2 To 79771
 
 Tickler = ws.Cells(i, 1).Value
+
 Open_Date = ws.Cells(i, 3).Value
+
 Close_Date = ws.Cells(i, 5).Value
+
 Year_change = Open_Date - Close_Date
+
 Percent_Change = ((Close_Date - Open_Date) / Open_Date) * 100
+
 Total_Stock_Volume = ws.Cells(i, 7).Value
 
 
